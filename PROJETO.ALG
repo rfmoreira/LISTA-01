@@ -1,8 +1,8 @@
 algoritmo "PROJETO"
-// Disciplina  : [LÛgica de ProgramaÁ„o orientada a objeitos - LPOO]
+// Disciplina  : [L√≥gica de Programa√ß√£o orientada a objeitos - LPOO]
 // Professor   : Aldo Henrique
 // Autor(a)    : Rafael Moreira Ferreira - CPD 43122
-// Data atual  : 31/03/2018
+// Data atual  : 08/04/2018
 var
    n1, x, y, z, soma, sub, masc, feim, idmas, idfeim, cont, idade, d, i, decimal, res:inteiro
    media, divi, mdmas, mdfeim, con:real
@@ -11,26 +11,26 @@ var
 
 inicio
 
-   repita   // Aqui o programa ir· repetir a operaÁ„o ate que o usu·rio digite a opÁ„o de sair
+   repita   // Aqui o programa ir√° repetir a opera√ß√£o ate que o usu√°rio digite a op√ß√£o de sair
       escreval("")
       escreval ("Escolha")
       escreval ("1. Soma")
-      escreval ("2. SubtraÁ„o")
-      escreval ("3. Divis„o")
-      escreval ("4. Faixa etaria")            //Aqui o programa ir· exibir na tela as opÁıes para o usu·rio
-      escreval ("5. N˙meros primos")
-      escreval ("6. MudanÁa Base")
+      escreval ("2. Subtra√ß√£o")
+      escreval ("3. Divis√£o")
+      escreval ("4. Faixa etaria")            //Aqui o programa ir√° exibir na tela as op√ß√µes para o usu√°rio
+      escreval ("5. N√∫meros primos")
+      escreval ("6. Mudan√ßa Base")
       escreval ("7. Sair")
-      Leia (n1)                               // O usu·rio entra com a opÁ„o desejada
+      Leia (n1)                               // O usu√°rio entra com a op√ß√£o desejada
 
 
-      escolha(n1)                            //O programa ler o valor digitado pelo usuario e executa a opÁ„o desejada
+      escolha(n1)                            //O programa ler o valor digitado pelo usuario e executa a op√ß√£o desejada
 
       caso 1
          limpatela
          Escreval ("Digite o primeiro numero: ")
          Leia (x)
-         Escreval ("Digite o segundo numero: ")           // Aqui o usu·rio deve digitar os numeros para soma
+         Escreval ("Digite o segundo numero: ")           // Aqui o usu√°rio deve digitar os numeros para soma
          Leia (y)
          soma<- x+y        // O programa faz o calculo da soma dos numeros digitados
          escreval ("O resultado da some e: ", soma)    // Apresenta o resultado da soma
@@ -39,40 +39,40 @@ inicio
          limpatela
          Escreval ("Digite o primeiro numero: ")
          Leia (x)
-         Escreval ("Digite o segundo numero: ")            // Aqui o usu·rio deve digitar os numeros para subtraÁ„o
+         Escreval ("Digite o segundo numero: ")            // Aqui o usu√°rio deve digitar os numeros para subtra√ß√£o
          Leia (y)
          sub<- x-y           // O programa faz o calculo
-         escreval ("O resultado da subtraÁ„o e: ", sub)   // Apresenta o resultado da subtraÁ„o
+         escreval ("O resultado da subtra√ß√£o e: ", sub)   // Apresenta o resultado da subtra√ß√£o
 
       caso 3
          limpatela
          Escreval ("Digite o primeiro numero: ")
          Leia (x)
-         Escreval ("Digite o segundo numero: ")          // Aqui o usu·rio deve digitar os numeros para divis„o
+         Escreval ("Digite o segundo numero: ")          // Aqui o usu√°rio deve digitar os numeros para divis√£o
          Leia (y)
-         se (y = 0)entao    // Aqui o programa ir· verificar se a divis„o e possivel
-            escreval ("Divis„o inexistente")// Caso n„o seja possivel ele escreve inexistente
+         se (y = 0)entao    // Aqui o programa ir√° verificar se a divis√£o e possivel
+            escreval ("Divis√£o inexistente")// Caso n√£o seja possivel ele escreve inexistente
          senao
-            divi<- x/y      // O programa faz a divis„o
-            escreval ("O resultado da divis„o e: ", divi) // Apresenta o resultado
+            divi<- x/y      // O programa faz a divis√£o
+            escreval ("O resultado da divis√£o e: ", divi) // Apresenta o resultado
          fimse
       caso 4
          limpatela
          Escreval("Escreva a quantidade de pessoas; ")
-         leia(y)           // Aqui o usu·rio entra com a quatidade de pessoas desejadas
-         cont<- 1   // Essa variavel e o contador para ler a quantidade de pessoas que o usu·rio digitar
+         leia(y)           // Aqui o usu√°rio entra com a quatidade de pessoas desejadas
+         cont<- 1   // Essa variavel e o contador para ler a quantidade de pessoas que o usu√°rio digitar
          masc<-0
          feim<-0
          soma<-0
-         idmas<-0         // Aqui o programa ir· zerar todas a variaveis para n„o haver acumulaÁ„o de valores
+         idmas<-0         // Aqui o programa ir√° zerar todas a variaveis para n√£o haver acumula√ß√£o de valores
          idfeim<-0
          mdmas <-0
          mdfeim<-0
          enquanto (cont<=y)faca        // Aqui o programa ira executar os passoas abaixo ate que cont seja maior que valor de pessoas digitado
             escreval ("Digite a idade")
-            leia(idade)           // O usu·rio entra com a idade de cada pessoa
+            leia(idade)           // O usu√°rio entra com a idade de cada pessoa
             escreval("Escolha sexo (1) ou (2)")
-            escreval ("1. Masculino")              // Aqui o usu·rio deve escolher o sexo de cada pessoa
+            escreval ("1. Masculino")              // Aqui o usu√°rio deve escolher o sexo de cada pessoa
             escreval ("2. Feiminino")
             leia (n1)
 
@@ -86,7 +86,7 @@ inicio
                idfeim<-idfeim+idade     // O programa soma a idade das pessoas do sexo feminino
             fimse
 
-            soma<-soma+idade   // O programa soma todas as idades digitadas pelo usu·rio
+            soma<-soma+idade   // O programa soma todas as idades digitadas pelo usu√°rio
             cont<- cont+1   // Aqui o programa acrescenta mais um ao contador
 
          fimenquanto
@@ -102,20 +102,20 @@ inicio
 
       caso 5
          limpatela
-         repita  // Caso o valor digitado pelo usu·rio seja 0 ir· pedir para que ele digite o valor novamente
+         repita  // Caso o valor digitado pelo usu√°rio seja 0 ir√° pedir para que ele digite o valor novamente
             escreval("Digite um numero:")
-            Leia (x)                     // O usu·rio entra com um numero inteiro
+            Leia (x)                     // O usu√°rio entra com um numero inteiro
             se (x=0)entao                     // Aqui o programa verifica se o valor digitado e igual a 0
                escreval ("Valor Invalido")  // Se for igual a 0 o programa apresenta
             fimse
          ate (x<>0)
          soma<- 0        // Atribui o valor de 0 para a varivel soma
 
-         para y de 1 ate x faca  // Aqui o prgrama ira contar de 1 ate o valor que o usu·rio digitou
-            cont<-0       // Atribui o valor de 0 ao contador para  a nova operaÁ„o
-            para z de 1 ate y faca  // Aqui ir· contar de 1 ate o valor que y estiver
-               se (y mod z =0) entao    // Aqui o programa ir· verificar se o resto da divis„o de y ate z e 0
-                  cont<- cont+1       // Caso o resto da divis„o for 0 ent„o soma o valor contido no contador mais 01
+         para y de 1 ate x faca  // Aqui o prgrama ira contar de 1 ate o valor que o usu√°rio digitou
+            cont<-0       // Atribui o valor de 0 ao contador para  a nova opera√ß√£o
+            para z de 1 ate y faca  // Aqui ir√° contar de 1 ate o valor que y estiver
+               se (y mod z =0) entao    // Aqui o programa ir√° verificar se o resto da divis√£o de y ate z e 0
+                  cont<- cont+1       // Caso o resto da divis√£o for 0 ent√£o soma o valor contido no contador mais 01
                fimse
             fimpara
 
@@ -123,45 +123,45 @@ inicio
                soma<- soma+y     //  Se for igual a 2 ele soma o valor de soma + o valor de y
             fimse
          fimpara
-         escreval ("A soma de todos o numeros primos de 1 ate", x, " e igual a: ", soma) // Aqui ele apresenta a soma de todos os numeros primos de 1 ate o valor que o usu·rio digitou.
+         escreval ("A soma de todos o numeros primos de 1 ate", x, " e igual a: ", soma) // Aqui ele apresenta a soma de todos os numeros primos de 1 ate o valor que o usu√°rio digitou.
 
       caso 6
          limpatela
 
-         Escreval("Digite B para convers„o em bin·rio e D para convers„o em decimal ")
-         Leia(n2)                                      //Aqui o programa lÍ a opÁ„o desejada pelo usuarios
+         Escreval("Digite B para convers√£o em bin√°rio e D para convers√£o em decimal ")
+         Leia(n2)                                      //Aqui o programa l√™ a op√ß√£o desejada pelo usuarios
 
-         se (n2="b")entao                              // Se a opÁ„o for b ele entra na condiÁ„o
-            escreva("Entre com um n˙mero inteiro :")
-            leia(x)                                    //Aqui o programa lÍ o numero inteiro digitado pelo usuario
+         se (n2="b")entao                              // Se a op√ß√£o for b ele entra na condi√ß√£o
+            escreva("Entre com um n√∫mero inteiro :")
+            leia(x)                                    //Aqui o programa l√™ o numero inteiro digitado pelo usuario
             d <- x                                     // Aqui o programa guarda o valor de x em d para uso futuro
-            r<-""                                      // Aqui a variavÈl r est· sendo zerada para que n„o haja acumulo de valores
-            enquanto x > 0 faca                        // enquanto o valor de x for maior que 0 ele continua a fazer a opeÁıa abaixo
-               se (x mod 2) = 0 entao                  // Verifica se o resto da divis„o de x e 2 e igual a 0 se for ele entra na condiÁ„o
+            r<-""                                      // Aqui a variav√©l r est√° sendo zerada para que n√£o haja acumulo de valores
+            enquanto x > 0 faca                        // enquanto o valor de x for maior que 0 ele continua a fazer a ope√ß√µa abaixo
+               se (x mod 2) = 0 entao                  // Verifica se o resto da divis√£o de x e 2 e igual a 0 se for ele entra na condi√ß√£o
                   r <- "0" + r                         // Se for igual a zero ele atribui o caracter 0 mais o valor de r a r
                senao
                   r <- "1" + r                         // Se for 1 ele atribui o caracter 1 a r mais o valor de r
                fimse
-               x <- x div 2                            // Aqui ser· dividio x por 2
+               x <- x div 2                            // Aqui ser√° dividio x por 2
             fimenquanto
-            escreval("A convers„o do numero", d, " par  a bin·rio È ", r)     //  Aqui ir· escrever na tela o valor contido em d e o resutlado em binario
+            escreval("A convers√£o do numero", d, " par  a bin√°rio √© ", r)     //  Aqui ir√° escrever na tela o valor contido em d e o resutlado em binario
          fimse
-         se(n2="d")entao                    // se n2 for d ent„o ele entra na condiÁ„o
+         se(n2="d")entao                    // se n2 for d ent√£o ele entra na condi√ß√£o
 
             escreval("Digite a quantidade de digitos que tem seu numero binario")
-            Leia(x)                                                          // Aqui o programa lÍ a quantidade de digitos que tem o numero binario do usuario
+            Leia(x)                                                          // Aqui o programa l√™ a quantidade de digitos que tem o numero binario do usuario
             x<-x-1                                                           // Aqui atribui -1 ao numero digitado pelo usuario
             con<-0                                                           // o Porgrama zera a variavel con
-            para y de x ate 0 passo -1 faca                                  //Aqui o programa ir· contar de do valor que o usuario digitou ate 0
+            para y de x ate 0 passo -1 faca                                  //Aqui o programa ir√° contar de do valor que o usuario digitou ate 0
                escreva("Digite o", y+1 ," numero: ")
-               Leia(z)                                                       //Aqui o programa lÍ o nuemros um a um digitados pelo usuario
+               Leia(z)                                                       //Aqui o programa l√™ o nuemros um a um digitados pelo usuario
 
-               se (z=1)entao                                                  // Sempre que z for igual a 1 entra na condiÁ„o
+               se (z=1)entao                                                  // Sempre que z for igual a 1 entra na condi√ß√£o
                   con<- (2^y)+con                                             // atribui a variavel con, a pontencia de 2^y e soma o valor ja contido em con
                fimse
             fimpara
 
-            escreval ("Decimal È: ", con)                   //Escreve na tela o valor da convers„o de binario para decimal
+            escreval ("Decimal √©: ", con)                   //Escreve na tela o valor da convers√£o de binario para decimal
          fimse
       caso 7
          limpatela
