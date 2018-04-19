@@ -8,7 +8,6 @@ var
    media, divi, mdmas, mdfeim, con:real
    r, n2: caracter
 
-
 inicio
 
    repita   // Aqui o programa irá repetir a operação ate que o usuário digite a opção de sair
@@ -21,8 +20,8 @@ inicio
       escreval ("5. Números primos")
       escreval ("6. Mudança Base")
       escreval ("7. Sair")
+      escreva ("Digite a opção desejada: ")
       Leia (n1)                               // O usuário entra com a opção desejada
-
 
       escolha(n1)                            //O programa ler o valor digitado pelo usuario e executa a opção desejada
 
@@ -79,11 +78,13 @@ inicio
             se (n1=1)entao
                masc<- masc+1     // O programa soma a quantidade de pessoas do sexo masculino
                idmas<-idmas+idade   // O programa soma a idade das pessoas do sexo masculino
+               mdmas<- idmas/masc      // Calculo da media das idades masculina
             fimse
 
             se (n1 =2)entao
                feim<- feim+1            // O programa soma a quantidade de pessoas do sexo feminino
                idfeim<-idfeim+idade     // O programa soma a idade das pessoas do sexo feminino
+               mdfeim<- idfeim/feim           // Calculo da media da idade feminina
             fimse
 
             soma<-soma+idade   // O programa soma todas as idades digitadas pelo usuário
@@ -91,10 +92,8 @@ inicio
 
          fimenquanto
 
-         mdmas<- idmas/masc      // Calculo da media das idades masculina
          escreval("A media da idade de homens: ", mdmas)   // Escreve a media das idades masculinas
 
-         mdfeim<- idfeim/feim           // Calculo da media da idade feminina
          escreval("A media da idade de mulheres: ", mdfeim) // Escreve a media das idades feminina
 
          media<-soma/y                                    // Calculo da media de todas as idades
@@ -168,6 +167,5 @@ inicio
          escreval ("Fim do programa, obrigado pela preferencia ^-^ ")      //escreve na tela
       fimescolha
    ate (n1=7)   // Se n1 for igual a zero o programa e finalizado
-
 
 fimalgoritmo
